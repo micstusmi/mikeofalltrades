@@ -3,60 +3,221 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mike of All Trades</title>
-  <meta name="description" content="Reliable handyman services. Repairs, maintenance, and odd jobs." />
+  <title>Mike of All Trades | Handyman Services</title>
+  <meta name="description" content="Reliable handyman services. Repairs, maintenance, and odd jobs done properly." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header class="wrap">
-    <h1>Mike of All Trades</h1>
-    <p class="sub">Handyman • Repairs • Maintenance • Odd jobs</p>
-    <a class="btn" href="#contact">Get a quote</a>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Mike of All Trades home">
+        <img src="images/mikeofalltrades_logo.png" alt="Mike of All Trades logo" class="brand-logo" />
+        <span class="brand-text">
+          <span class="brand-name">Mike of All Trades</span>
+          <span class="brand-tag">Handyman • Repairs • Maintenance</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-primary">Get a quote</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>Services</h2>
-      <ul class="cards">
-        <li>General repairs & maintenance</li>
-        <li>Flat-pack assembly</li>
-        <li>Hanging shelves / TVs / pictures</li>
-        <li>Patch & paint touch-ups</li>
-        <li>Minor carpentry & fixes</li>
-        <li>Small jobs — just ask</li>
-      </ul>
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="pill">Based in Pakenham but servicing all of Melbourne's South Eastern Suburbs</p>
+          <h1>Reliable handyman services — done properly.</h1>
+          <p class="lead">
+            Repairs, maintenance, and small jobs without the hassle.
+            Clear communication, tidy work, and quality results.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Get a quote</a>
+            <a class="btn btn-ghost" href="#services">See services</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust-item">
+              <span class="trust-title">✔ On-time & tidy</span>
+              <span class="trust-sub">Respectful in your home</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-title">✔ Clear pricing</span>
+              <span class="trust-sub">No surprises</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-title">✔ Quality work</span>
+              <span class="trust-sub">Built to last</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Quick contact">
+          <h2>Quick contact</h2>
+          <p class="muted">Call or email and tell me what you need done.</p>
+
+          <!-- Update your phone number -->
+          <a class="contact-row" href="tel:+61405283013">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+61 405 283 013</span>
+          </a>
+
+          <!-- Email (bot-resistant) -->
+          <a class="contact-row" id="emailLink" href="#">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">Email me</span>
+          </a>
+
+          <p class="tiny muted">Tip: include photos and your suburb for a faster quote.</p>
+        </aside>
+      </div>
     </section>
 
-    <section>
-      <h2>Why choose me</h2>
-      <ul>
-        <li>On-time, tidy, and respectful</li>
-        <li>Clear pricing and honest advice</li>
-        <li>Quality work that lasts</li>
-      </ul>
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p class="muted">If it’s on your “to-do list”, I can probably help. Here are common jobs:</p>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <div class="icon">🛠️</div>
+            <h3>General repairs</h3>
+            <p>Fixes around the home — doors, handles, hinges, small repairs.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">📦</div>
+            <h3>Flat-pack assembly</h3>
+            <p>Furniture built correctly and safely, without the frustration.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🖼️</div>
+            <h3>Hanging & mounting</h3>
+            <p>TVs, shelves, pictures, mirrors — level and secure.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🎨</div>
+            <h3>Patch & touch-ups</h3>
+            <p>Small patch jobs and paint touch-ups to keep things looking sharp.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🪚</div>
+            <h3>Minor carpentry</h3>
+            <p>Small timber fixes, adjustments, and tidy finishing work.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">✅</div>
+            <h3>Odd jobs</h3>
+            <p>Small jobs welcome — send the details and I’ll tell you if I can do it.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="#" id="email">Email me</a>
+    <!-- About -->
+    <section class="section section-alt" id="about">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p class="muted">
+            I’m Mike — I help homeowners and small businesses with repairs, maintenance, and the jobs that never
+            quite get done. I turn up when I say I will, keep things tidy, and focus on doing the job properly.
+          </p>
 
-<script>
-  const u = "michaelssmith";
-  const d = "icloud.com";
-  document.getElementById("email").href = `mailto:${u}@${d}`;
-</script>
-</p>
-      <p>Phone: <a href="tel:+61XXXXXXXXX">+61 405 283 013</a></p>
-      <p class="tiny">Based in Pakenham but servicing all of Melbourne's South Eastern Suburbs</p>
+          <ul class="checklist">
+            <li>Friendly, reliable service</li>
+            <li>Clean finish and tidy workspace</li>
+            <li>Clear communication from start to finish</li>
+          </ul>
+        </div>
+
+        <div class="quote">
+          <p class="quote-text">
+            “Need a quick fix or a few jobs knocked over? Send me a message and I’ll get back to you.”
+          </p>
+          <p class="quote-name">— Mike</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Get a quote</h2>
+          <p class="muted">Tell me what you need, your suburb, and your preferred time.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Call</h3>
+            <p class="muted">Fastest for urgent jobs.</p>
+            <a class="btn btn-primary full" href="tel:+61405283013">Call +61 405 283 013</a>
+          </div>
+
+          <div class="card">
+            <h3>Email</h3>
+            <p class="muted">Best if you can include photos.</p>
+            <a class="btn btn-ghost full" id="emailBtn" href="#">Email me</a>
+            <p class="tiny muted">I’ll reply as soon as I can.</p>
+          </div>
+
+          <div class="card">
+            <h3>Service area</h3>
+            <p class="muted">Update this to your real coverage.</p>
+            <p><strong>(Your suburb / region here)</strong></p>
+            <p class="tiny muted">Add your hours too if you like.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="wrap tiny">
-    © <span id="y"></span> Mike of All Trades
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">Mike of All Trades</span>
+        <span class="tiny muted">© <span id="y"></span></span>
+      </div>
+      <div class="footer-right">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </footer>
 
   <script>
+    // year
     document.getElementById("y").textContent = new Date().getFullYear();
+
+    // email obfuscation (reduce scraping)
+    const user = "michaelssmith"; // <-- change if you want
+    const domain = "icloud.com";
+    const email = `${user}@${domain}`;
+
+    const emailLink = document.getElementById("emailLink");
+    const emailBtn = document.getElementById("emailBtn");
+
+    if (emailLink) emailLink.href = `mailto:${email}`;
+    if (emailBtn) emailBtn.href = `mailto:${email}`;
   </script>
 </body>
 </html>
