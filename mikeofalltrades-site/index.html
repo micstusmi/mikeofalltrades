@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mike of All Trades</title>
+  <meta name="description" content="Reliable handyman services. Repairs, maintenance, and odd jobs." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <h1>Mike of All Trades</h1>
+    <p class="sub">Handyman • Repairs • Maintenance • Odd jobs</p>
+    <a class="btn" href="#contact">Get a quote</a>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Services</h2>
+      <ul class="cards">
+        <li>General repairs & maintenance</li>
+        <li>Flat-pack assembly</li>
+        <li>Hanging shelves / TVs / pictures</li>
+        <li>Patch & paint touch-ups</li>
+        <li>Minor carpentry & fixes</li>
+        <li>Small jobs — just ask</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why choose me</h2>
+      <ul>
+        <li>On-time, tidy, and respectful</li>
+        <li>Clear pricing and honest advice</li>
+        <li>Quality work that lasts</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hello@mikeofalltrades.com.au">hello@mikeofalltrades.com.au</a></p>
+      <p>Phone: <a href="tel:+61XXXXXXXXX">+61 XX XXX XXX</a></p>
+      <p class="tiny">Servicing: (add your suburb/area)</p>
+    </section>
+  </main>
+
+  <footer class="wrap tiny">
+    © <span id="y"></span> Mike of All Trades
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
