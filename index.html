@@ -38,7 +38,14 @@
 
     <section id="contact" class="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:hello@mikeofalltrades.com.au">hello@mikeofalltrades.com.au</a></p>
+      <p>Email: <a href="#" id="email">Email me</a>
+
+<script>
+  const u = "hello";
+  const d = "mikeofalltrades.com.au";
+  document.getElementById("email").href = `mailto:${u}@${d}`;
+</script>
+</p>
       <p>Phone: <a href="tel:+61XXXXXXXXX">+61 405 283 013</a></p>
       <p class="tiny">Based in Pakenham but servicing all of Melbourne's South Eastern Suburbs</p>
     </section>
